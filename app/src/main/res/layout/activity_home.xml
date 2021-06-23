@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/black_border_2px_white_background_opaque">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/notifications"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_notification_foreground" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/delivery_date_notification"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_notification_calendar_foreground" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/black_border_2px_white_background_opaque"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/current_stock_amount_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Stock"
+                android:textSize="23sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/whitehall"
+                android:padding="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                />
+
+                <TextView
+                    android:id="@+id/current_bag_amount_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="current bag amount"
+                    android:textSize="19sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/coiny_regular"
+                    android:padding="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/black_border_2px_white_background_opaque"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/order_some_avocados_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                android:text="Order Avocados"
+                android:fontFamily="@font/whitehall"
+                android:textSize="22sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/order_some_avocados_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/black_border_2px_white_background_opaque"
+                android:padding="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/black_border_2px_white_background_opaque">
+
+                    <TextView
+                        android:id="@+id/minimum_order_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Minimum Order in bags for free delivery is: "
+                        android:textSize="19sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/coiny_regular"
+                        android:padding="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/minimum_order_total_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="current bag amount"
+                    android:textSize="19sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/coiny_regular"
+                    android:padding="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/number_of_bags_to_order_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Number of Bags"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/happymonkey_regular"
+                    android:padding="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/process_order_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Process Order"
+                    android:fontFamily="@font/happymonkey_regular"
+                    android:padding="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="4dp"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/check_orders_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                android:text=" Check Orders"
+                android:fontFamily="@font/whitehall"
+                android:textSize="22sp"
+                />
+    </LinearLayout>
+</ScrollView>

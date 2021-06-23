@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderAvocadosActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:padding="9dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Choose Payment Method"
+                android:textSize="22sp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitehall"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp">
+
+                <CheckBox
+                    android:id="@+id/cod_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C.O.D"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/eft_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E.F.T"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/in_app_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In App Payment"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cod_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/black_border_2px_white_background_opaque"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price"
+                    android:textSize="22sp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/cod_total_price_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price #"
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Payment Instructions"
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Please have the above amount of money available on collection. Please ensure that the amount is exact as we do not like to carry cash."
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eft_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/black_border_2px_white_background_opaque"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price"
+                    android:textSize="22sp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/eft_total_price_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price #"
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Payment Instructions"
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Please deposit the funds into the following account: \n\n Account Holder \n Bank Name \n Account Number \n Branch Number \n\n Please use your name and surname as reference "
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/in_app_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/black_border_2px_white_background_opaque"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price"
+                    android:textSize="22sp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/in_app_total_price_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Total Price #"
+                    android:textSize="22sp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/whitehall"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:paddingStart="6dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingEnd="6dp"
+                    android:layout_margin="6dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Absa Bank"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FNB"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Standard Bank"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NedBank"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Capitec"
+                            />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <WebView
+                    android:id="@+id/in_app_payment_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/finalise_order_for_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finalise Order For Delivery"
+                android:padding="12dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitehall"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

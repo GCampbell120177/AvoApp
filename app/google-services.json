@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70418686513",
+    "firebase_url": "https://the-avo-app-bf9b3-default-rtdb.firebaseio.com",
+    "project_id": "the-avo-app-bf9b3",
+    "storage_bucket": "the-avo-app-bf9b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70418686513:android:dd66e02ec47b2f37622b10",
+        "android_client_info": {
+          "package_name": "za.co.appwitch.avoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70418686513-asrkn97re967heanirasn969f4kgi8u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqr5YTTzRF6flzVecPb2JK9DCcwQh3nlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70418686513-asrkn97re967heanirasn969f4kgi8u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
